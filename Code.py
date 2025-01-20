@@ -9,7 +9,7 @@ def handle_client(conn, addr):
         print(f"Received from {addr}: {data}")
         conn.sendall(data.upper())  # Enviamos el mensaje en mayúsculas
 
-HOST = 'localhost'
+HOST = 'IP'
 PORT = 12345
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
